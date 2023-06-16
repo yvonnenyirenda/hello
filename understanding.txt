@@ -1,0 +1,6 @@
+1. link project to github
+ - copy the commads on github repo and paste them in the termnal and click enter
+ 
+ 2. enter a command "git branch" to show the name of the branch you working on 
+
+  /////to create a new branch enter command "git branch "name of the branch" "
