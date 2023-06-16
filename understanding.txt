@@ -3,4 +3,57 @@
  
  2. enter a command "git branch" to show the name of the branch you working on 
 
-  /////to create a new branch enter command "git branch "name of the branch" "
+  /////to create a new branch enter command "git branch "name of the branch" ".
+
+  3. to switch braches enter "git checkout "master""
+  4. enter "git add ." to add the code to the branch you created 
+  5. enter "git commit -m "name of the branch for github" " to give a name for the github branch
+  6. enter "git push" to push code to github repository
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+  PS C:\Users\Yvone\Documents\gitpushing> git branch
+* main
+PS C:\Users\Yvone\Documents\gitpushing>
+git: 'brance' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+* main
+  master
+PS C:\Users\Yvone\Documents\gitpushing> git checkout master
+Switched to branch 'master'
+PS C:\Users\Yvone\Documents\gitpushing> git branch
+  main
+* master
+PS C:\Users\Yvone\Documents\gitpushing> git add
+hint: Maybe you wanted to say 'git add .'?
+hint: "git config advice.addEmptyPathspec false"
+PS C:\Users\Yvone\Documents\gitpushing> git add .
+PS C:\Users\Yvone\Documents\gitpushing> git commit -m "master"        
+[master eeb2d0f] master
+ 2 files changed, 18 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 understanding.txt
+PS C:\Users\Yvone\Documents\gitpushing> git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use        
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\Yvone\Documents\gitpushing>  git push --set-upstream origin master
+info: please complete authentication in your browser...
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (10/10), 1.07 KiB | 52.00 KiB/s, done.
+Total 10 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/yvonnenyirenda/hello.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+PS C:\Users\Yvone\Documents\gitpushing>
